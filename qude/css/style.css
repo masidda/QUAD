@@ -399,6 +399,9 @@ header .gnb .menuBox.on li:nth-child(4) a {
     width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
+    perspective: 900px;
+    overflow: hidden;
+    /* 추후 scrolltrigger 가로영역 막기 위함 */
 }
 
 .con03 .listBox li {
@@ -409,6 +412,27 @@ header .gnb .menuBox.on li:nth-child(4) a {
     background: var(--sub-color);
     border-radius: 10px;
     text-align: center;
-    padding: 30px 0;
+    padding: 30% 0;
     background: red;
 }
+
+.con03 .listBox li .img img {
+    width: 40%;
+}
+
+.con03 .listBox li h4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 50px;
+    font-weight: normal;
+}
+
+.con03 .listBox li h4 span.b {
+    opacity: 0.5;
+}
+
+.con03 .listBox li[data-color="a"]{--sub-color: #d1dbfd}
+.con03 .listBox li[data-color="b"]{--sub-color: #d1dbfd}
+.con03 .listBox li[data-color="c"]{--sub-color: #d1dbfd}
+.con03 .listBox li[data-color="d"]{--sub-color: #d1dbfd}
+.con03 .listBox li[data-color="e"]{--sub-color: #d1dbfd}
