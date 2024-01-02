@@ -396,6 +396,7 @@ header .gnb .menuBox.on li:nth-child(4) a {
 }
 
 .con03 .listBox {
+    display: flex;
     width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -408,13 +409,14 @@ header .gnb .menuBox.on li:nth-child(4) a {
     width: 32.2%;
 }
 
-.con03 .listBox li img {
-    background: var(--sub-color);
+.con03 .listBox li .img {
+    background: var(--main-color);
     border-radius: 10px;
     text-align: center;
-    padding: 30% 0;
+    padding: 30px 0;
     background: red;
 }
+
 
 .con03 .listBox li .img img {
     width: 40%;
@@ -431,8 +433,8 @@ header .gnb .menuBox.on li:nth-child(4) a {
     opacity: 0.5;
 }
 
-.con03 .listBox li[data-color="a"]{--sub-color: #d1dbfd}
-.con03 .listBox li[data-color="b"]{--sub-color: #d1dbfd}
-.con03 .listBox li[data-color="c"]{--sub-color: #d1dbfd}
-.con03 .listBox li[data-color="d"]{--sub-color: #d1dbfd}
-.con03 .listBox li[data-color="e"]{--sub-color: #d1dbfd}
+.con03 .listBox li[data-color="a"]{--main-color: #d1dbfd}
+.con03 .listBox li[data-color="b"]{--main-color: #90c3cd}
+.con03 .listBox li[data-color="c"]{--main-color: #ff764a}
+.con03 .listBox li[data-color="d"]{--main-color: #47b172}
+.con03 .listBox li[data-color="e"]{--main-color: #ffb84f}
